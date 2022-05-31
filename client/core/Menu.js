@@ -11,21 +11,24 @@ import {Link, withRouter} from 'react-router-dom'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
-    return {color: '#f57c00'}
+    return {color: '#040404'}
   else
-    return {color: '#fffde7'}
+    return {color: '#fffff'}
 }
 const isPartActive = (history, path) => {
   if (history.location.pathname.includes(path))
-    return {color: '#fffde7', backgroundColor: '#f57c00', marginRight:10}
+    return {color: '#ffffff', backgroundColor: '#040404', marginRight:10}
   else
-    return {color: '#616161', backgroundColor: '#fffde7', border:'1px solid #f57c00', marginRight:10}
+    return {color: '#040404', backgroundColor: '#ffffff', border:'1px solid #f57c00', marginRight:10}
 }
+const styles = { appBarBackground:{ background : '#fffff' }};
+
+
 const Menu = withRouter(({history}) => (
-  <AppBar position="fixed" style={{zIndex:12343455}}>
-    <Toolbar>
-      <Typography variant="h6" color="inherit">
-        MERN Classroom
+  <AppBar style={{boxShadow: "none", borderRadius: 4}}  style={styles.appBarBackground} position="fixed" style={{zIndex:12343455}}>
+    <Toolbar style={{boxShadow: "none" }}>
+      <Typography variant="h6" color='textPrimary'>
+        Classie
       </Typography>
       <div>
         <Link to="/">

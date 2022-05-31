@@ -17,13 +17,19 @@ const useStyles = makeStyles(theme => ({
     margin: 'auto',
     textAlign: 'center',
     marginTop: theme.spacing(12),
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacing(2),
+    boxShadow: 'rgb(15 15 15 / 5%) 0px 1px 2px',
+    border: '1px solid rgba(15, 15, 15, 0.15)',
+    borderRadius: 4
   },
   error: {
     verticalAlign: 'middle'
   },
   title: {
     marginTop: theme.spacing(2),
+    fontWeight: 700,
+    lineHeight: 1.1,
+    fontFamily:'inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
     color: theme.palette.openTitle
   },
   textField: {
@@ -80,7 +86,7 @@ export default function Signin(props) {
   return (
       <Card className={classes.card}>
         <CardContent>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h3" className={classes.title}>
             Sign In
           </Typography>
           <TextField id="email" type="email" label="Email" className={classes.textField} value={values.email} onChange={handleChange('email')} margin="normal"/><br/>
@@ -93,7 +99,7 @@ export default function Signin(props) {
           }
         </CardContent>
         <CardActions>
-          <Button color="primary" variant="contained" onClick={clickSubmit} className={classes.submit}>Submit</Button>
+          <Button color="primary" variant="outlined" onClick={clickSubmit} className={classes.submit}>Submit</Button>
         </CardActions>
       </Card>
     )

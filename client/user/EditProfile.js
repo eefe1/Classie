@@ -76,7 +76,7 @@ export default function EditProfile({ match }) {
       name: values.name || undefined,
       email: values.email || undefined,
       password: values.password || undefined,
-      educator: values.educator 
+      educator: values.educator || undefined
     }
     update({
       userId: match.params.userId

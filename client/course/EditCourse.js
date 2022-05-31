@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
     margin: '16px',
   },
   upArrow: {
-      border: '2px solid #f57c00',
+      border: '2px solid #5bc0de',
       marginLeft: 3,
       marginTop: 10,
       padding:4

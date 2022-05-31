@@ -7,13 +7,13 @@ export default ({markup, css}) => {
             name="viewport"
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           >
-          <title>MERN Classroom</title>
+          <title>Clasie</title>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400">
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <style>
               a{
                 text-decoration: none;
-                color: #bb4d00
+                color: #292b2c
               }
           </style>
         </head>

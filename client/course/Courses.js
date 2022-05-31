@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
   tileTitle: {
     fontSize:'1.1em',
     marginBottom:'5px',
-    color:'#fffde7',
+    color:'#040404',
     display:'block'
   },
   action:{

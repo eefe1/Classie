@@ -110,7 +110,7 @@ const useStyles = makeStyles(theme => ({
       textAlign: 'center',
       color: '#dfdfdf',
       '& span':{
-        color: '#fffde7',
+        color: '#040404',
         fontSize: '1.15em'
       }
     },

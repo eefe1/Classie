@@ -21,13 +21,18 @@ const useStyles = makeStyles(theme => ({
     margin: 'auto',
     textAlign: 'center',
     marginTop: theme.spacing(12),
-    paddingBottom: theme.spacing(2)
+    paddingBottom: theme.spacing(2),
+    boxShadow: 'rgb(15 15 15 / 5%) 0px 1px 2px',
+    border: '1px solid rgba(15, 15, 15, 0.15)'
   },
   error: {
     verticalAlign: 'middle'
   },
   title: {
     marginTop: theme.spacing(2),
+    fontWeight: 700,
+    lineHeight: 1.1,
+    fontFamily:'inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"',
     color: theme.palette.openTitle
   },
   textField: {
@@ -73,7 +78,7 @@ export default function Signup() {
     return (<div>
       <Card className={classes.card}>
         <CardContent>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h3" className={classes.title}>
             Sign Up
           </Typography>
           <TextField id="name" label="Name" className={classes.textField} value={values.name} onChange={handleChange('name')} margin="normal"/><br/>
@@ -86,7 +91,7 @@ export default function Signup() {
           }
         </CardContent>
         <CardActions>
-          <Button color="primary" variant="contained" onClick={clickSubmit} className={classes.submit}>Submit</Button>
+          <Button color={classes.title.color} variant="text" onClick={clickSubmit} className={classes.submit}>Register</Button>
         </CardActions>
       </Card>
       <Dialog open={values.open} disableBackdropClick={true}>
@@ -98,7 +103,7 @@ export default function Signup() {
         </DialogContent>
         <DialogActions>
           <Link to="/signin">
-            <Button color="primary" autoFocus="autoFocus" variant="contained">
+            <Button color="primary" autoFocus="autoFocus" variant="outlined">
               Sign In
             </Button>
           </Link>

@@ -17,7 +17,10 @@ const useStyles = makeStyles(theme => ({
     marginTop: 20,
     marginBottom: theme.spacing(2),
     padding: 20,
-    backgroundColor: '#ffffff' 
+    backgroundColor: '#ffffff' ,
+    boxShadow: 'rgb(15 15 15 / 5%) 0px 1px 2px',
+    border: '1px solid rgba(15, 15, 15, 0.15)',
+    borderRadius: 4
   },
   extraTop: {
     marginTop: theme.spacing(12)
@@ -41,18 +44,18 @@ const useStyles = makeStyles(theme => ({
     height: '100%'
   },
   tileBar: {
-    backgroundColor: 'rgba(0, 0, 0, 0.72)',
+    backgroundColor: '#5bc0de',
     textAlign: 'left'
   },
   enrolledTitle: {
-    color:'#efefef',
+    color:theme.palette.primary,
     marginBottom: 5
   },
   action:{
     margin: '0 10px'
   },
   enrolledCard: {
-    backgroundColor: '#616161',
+    backgroundColor: '#fffff',
   },
   divider: {
     marginBottom: 16,
@@ -101,7 +104,7 @@ export default function Home(){
     return (<div className={classes.extraTop}>
       {auth.isAuthenticated().user && (
       <Card className={`${classes.card} ${classes.enrolledCard}`}>
-        <Typography variant="h6" component="h2" className={classes.enrolledTitle}>
+        <Typography variant="h6" component="h3" className={classes.enrolledTitle}>
             Courses you are enrolled in
         </Typography>
         {enrolled.length != 0 ? (<Enrollments enrollments={enrolled}/>)

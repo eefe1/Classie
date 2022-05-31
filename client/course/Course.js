@@ -63,7 +63,7 @@ const useStyles = makeStyles(theme => ({
     verticalAlign: 'sub'
   },
   category:{
-    color: '#5c5c5c',
+    color: '#fffff',
     fontSize: '0.9em',
     padding: '3px 5px',
     backgroundColor: '#dbdbdb',

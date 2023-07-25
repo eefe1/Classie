@@ -8,5 +8,5 @@ A simple web-based classroom application that allows instructors to add courses 
    - To run the application for development, run ```  npm run development  ``` or ``` yarn development ```
 2. Open [localhost:3000](http://localhost:3000/) in the browser
 
-3. ![](https://berkleyillustration.com/cdn/shop/products/capybaraThumb.jpg?v=1531865484)
+
 ----
